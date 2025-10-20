@@ -1,0 +1,261 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #444;
+  line-height: 1.4;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#hero {
+  background-color: #e8f5e9;
+  color: #333;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+#hero h1 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#hero p {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  border: none;
+}
+
+.download-btn-more {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 0px;
+}
+
+#features,
+#testimonial,
+#download,
+#popular-content,
+#software-share {
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#features img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+#features ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+#features ul li {
+  font-size: 12px;
+  margin: 5px 0;
+  line-height: 1.4;
+  background: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.features-list-box {
+  box-sizing: border-box;
+  padding: 0px 20px;
+  max-width: 600px;
+}
+
+.software-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #4caf50;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  /* 限制高度 */
+  overflow-y: auto;
+  /* 垂直滚动条 */
+}
+
+.software-box-header {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.software-box h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.software-box a::before {
+  content: "⬇";
+  /* 下载图标 */
+  margin-right: 8px;
+  color: #4caf50;
+}
+
+#software-share .software-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  box-sizing: border-box;
+  padding: 40px 20px;
+}
+
+#software-share .software-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 5px 0;
+}
+
+#software-share .software-item img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#software-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+#software-share-container {
+  display: flex;
+  justify-content: center;
+  align-items: initial;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  #hero h1 {
+    font-size: 1.2em;
+  }
+
+  #hero p {
+    font-size: 0.8em;
+  }
+
+  .download-btn {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+
+  #features img {
+    margin-bottom: 15px;
+  }
+
+  #features ul li {
+    font-size: 10px;
+  }
+
+  #software-share .software-item h3 {
+    font-size: 14px;
+  }
+
+  #software-share .software-item p {
+    font-size: 12px;
+  }
+}
